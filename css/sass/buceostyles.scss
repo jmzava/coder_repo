@@ -134,6 +134,20 @@ footer {
     }
 }
 
+//  modal //
+
+.modalColor {
+    background-color: $colorBase;
+
+}
+.modalTexto {
+    color: $colorFuente;
+}
+
+.cursorDedo{
+    cursor: pointer;
+}
+
 .socialMedia {
     margin: 0px auto;
 

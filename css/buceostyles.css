@@ -112,6 +112,18 @@ footer {
   color: #a71b4a;
 }
 
+.modalColor {
+  background-color: #0e7ba7;
+}
+
+.modalTexto {
+  color: white;
+}
+
+.cursorDedo {
+  cursor: pointer;
+}
+
 .socialMedia {
   margin: 0px auto;
 }
