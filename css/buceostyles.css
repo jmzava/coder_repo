@@ -352,13 +352,16 @@ footer {
   max-width: 100%;
 }
 
-.cardStaff__frente, .cardStaff__atras {
+.cardStaff__frente,
+.cardStaff__atras {
   position: absolute;
   top: 0;
   left: 0;
   width: 350px;
   height: 250px;
+  -webkit-perspective: 1000;
   perspective: 1000;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -412,10 +415,12 @@ footer {
   body {
     background-image: url(../images/backs/back-tablet.png);
   }
+
   .listFooter li a {
     padding: 10px;
     font-size: 12px;
   }
+
   .socialMedia i {
     font-size: 15px;
   }
@@ -425,12 +430,13 @@ footer {
   body {
     background-image: url(../images/backs/back-full.jpg);
   }
+
   .listFooter li a {
     padding: 15px;
     font-size: 15px;
   }
+
   .socialMedia i {
     padding: 10px;
   }
 }
-/*# sourceMappingURL=buceostyles.css.map */
