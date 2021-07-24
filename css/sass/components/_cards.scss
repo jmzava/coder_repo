@@ -1,0 +1,102 @@
+/* cards cursos */ 
+
+.cardColor {
+    background-color: $colorBase
+}
+
+.card-text {
+    color: $colorFuente;
+}
+
+.card-title {
+    color: $colorFuente;
+}
+
+.list-group-item {
+    color: $colorFuente;
+}
+
+.list-group-item1 {
+    color: $colorFuente;
+}
+
+/* cards staff */ 
+
+.cardStaff {
+    width: 350px;
+    height: 250px;
+    margin: 0px auto;
+    cursor: pointer;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+
+    &__giro {
+        position: relative;
+        transition: 0.8s ease-in-out;
+        transform-style: preserve-3d;
+    }
+
+    &__imagen {
+        max-width: 100%;
+    }
+
+    &__frente,
+    &__atras {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 250px;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &__atras {
+        transform: rotateY(180deg);
+        background: $colorBase;
+        color: $colorFuente;
+    }
+
+    &__titulo {
+        position: relative;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    &:hover {
+        .cardStaff__giro {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &__subtitulo {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__texto {
+        margin-bottom: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+/* color de tarjetas variables con ciclo each */
+
+
+$colorTarjeta: (insPadi: $colorInsPadi,
+    insSnsi: $colorInsSnsi,
+    divPadi: $colorDivPadi,
+    divSnsi: $colorDivSnsi);
+
+@each $colorname,
+$colorcard in $colorTarjeta {
+    .cardColor--#{$colorname} {
+        background-color: $colorcard;
+    }
+}
