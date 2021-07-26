@@ -1,6 +1,8 @@
 <head>
     <meta charset="UTF-8">
-    <html lang="en"></html>
+    <html lang="en">
+
+    </html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -10,63 +12,114 @@
     <link rel="stylesheet" href="../css/nomalize.css">
     <link rel="stylesheet" href="../bootstrap502/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/testeos.css">
+    <link rel="stylesheet" href="../css/testeos.css">
+    <link rel="stylesheet" href="../css/buceostyles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <title>BAU – Home </title>
 </head>
 
-
-
-
-
-<body>
-
-    <!-- Button trigger modal -->
-
-
-
-    <image type="image" src="../images/Galeria/IMG6.jpg" data-bs-toggle="modal" data-bs-target="#modalGaleria1">
-
-        <!-- Modal -->
-        <div class="modal fade" id="modalGaleria1" tabindex="-1" aria-labelledby="modalGaleria1Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalGaleria1Label">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row" id="gallery">
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG1.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG2.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG3.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG4.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG1.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG2.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG3.jpg">
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <img class="w-100" src="../images/Galeria/IMG4.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<header>
+    <nav class="navbar navBarColor navbar-dark navbar-expand-lg" role="navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/sedes.html">SEDES</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">CURSOS</a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item navColorDes" href="pages/cursos.html">Open Water</a></li>
+                            <li><a class="dropdown-item navColorDes" href="pages/cursos.html">Advance Open Water</a>
+                            </li>
+                            <li><a class="dropdown-item navColorDes" href="pages/cursos.html">Rescue Diver</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/salidas.html">SALIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/staff.html">STAFF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
             </div>
+
         </div>
-        <script src="../bootstrap502/js/bootstrap.bundle.min.js"></script>
+        <a class="navbar-brand posDerechaLogo" href="#">
+            <img src="images/logos/bau.png" alt="logo de la escuela" width="90" height="54">
+        </a>
+    </nav>
+</header>
+
+
+
+<div class="CSSgal">
+
+    <!-- Don't wrap targets in parent -->
+    <s id="s1"></s>
+    <s id="s2"></s>
+    <s id="s3"></s>
+    <s id="s4"></s>
+
+    <div class="slider">
+        <div>
+            <img src="../images/Galeria/IMG2.jpg" style="width: 100%">
+        </div>
+        <div>
+            <img src="../images/Galeria/IMG2.jpg" style="width: 100%">
+        </div>
+        <div>
+            <img src="../images/Galeria/IMG3.jpg" style="width: 100%">
+        </div>
+        <div>
+            <img src="../images/Galeria/IMG4.jpg" style="width: 100%">
+        </div>
+    </div>
+
+    <!-- <div class="prevNext">
+      <div><a href="#s4"></a><a href="#s2"></a></div>
+      <div><a href="#s1"></a><a href="#s3"></a></div>
+      <div><a href="#s2"></a><a href="#s4"></a></div>
+      <div><a href="#s3"></a><a href="#s1"></a></div>
+    </div> -->
+
+    <div class="bullets">
+        <a href="#s1"></a>
+        <a href="#s2"></a>
+        <a href="#s3"></a>
+        <a href="#s4"></a>
+    </div>
+
+</div>
+<footer>
+
+    <ul class="listFooter">
+        <li><a href="#">HOME</a></li>
+        <li><a href="pages/sedes.html">SEDES</a></li>
+        <li><a href="pages/cursos.html">CURSOS</a></li>
+        <li><a href="pages/salidas.html">SALIDAS</a></li>
+        <li><a href="pages/staff.html">STAFF</a></li>
+        <li><a href="pages/contacto.html">CONTACTO</a></li>
+    </ul>
+    <div class="socialMedia">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+<script src="../bootstrap502/js/bootstrap.bundle.min.js"></script>
 </body>
