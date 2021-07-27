@@ -362,13 +362,11 @@ body {
   background: rgba(165, 163, 163, 0.3);
   border: rgba(165, 163, 163, 0.3); }
 
-.contactForm
-form {
+.contactForm form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px; }
-  .contactForm
-form label {
+  .contactForm form label {
     display: block; }
 
 .selectCustom {
