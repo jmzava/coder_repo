@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
     <title>BAU – Home </title>
 </head>
-
 <header>
     <nav class="navbar navBarColor navbar-dark navbar-expand-lg" role="navigation">
         <div class="container-fluid">
@@ -62,47 +61,57 @@
         </a>
     </nav>
 </header>
-
-
-
-<div class="CSSgal">
-
-    <!-- Don't wrap targets in parent -->
-    <s id="s1"></s>
-    <s id="s2"></s>
-    <s id="s3"></s>
-    <s id="s4"></s>
-
-    <div class="slider">
-        <div>
-            <img src="../images/Galeria/IMG2.jpg" style="width: 100%">
+<div class="contentForm">
+    <div class="wrapForm">
+        <div class="infoEmpresa">
+            <h3>Buceo Aventura Uruguay</h3>
+            <ul>
+                <li><i class="fa fa-phone"></i> (598) XXX XXXX</li>
+                <li><i class="fa fa-envelope"></i> bau@gmail.com</li>
+            </ul>
         </div>
-        <div>
-            <img src="../images/Galeria/IMG2.jpg" style="width: 100%">
+        <!-- End .company-info -->
+        <!-- CONTACT FORM -->
+        <div class="contact">
+            <h3>Contactanos</h3>
+            <form id="contact-form">
+                <p>
+                    <label>Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </p>
+
+                <p>
+                    <label>Apellido</label>
+                    <input type="text" name="company" id="company">
+                </p>
+
+                <p>
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+                <p>
+                    <label>Telefono</label>
+                    <input type="text" name="phone" id="phone">
+                </p>
+
+                <p class="full">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" id="message"></textarea>
+                </p>
+
+                <p class="full">
+                    <button class="formBoton" type="submit" value="ENVIAR">ENVIAR</button>
+                    <button class="formBoton" type="reset" value="LIMPIAR">LIMPIAR</button>
+                </p>
+            </form>
+            <!-- End #contact-form -->
         </div>
-        <div>
-            <img src="../images/Galeria/IMG3.jpg" style="width: 100%">
-        </div>
-        <div>
-            <img src="../images/Galeria/IMG4.jpg" style="width: 100%">
-        </div>
+        <!-- End .contact -->
     </div>
-
-    <!-- <div class="prevNext">
-      <div><a href="#s4"></a><a href="#s2"></a></div>
-      <div><a href="#s1"></a><a href="#s3"></a></div>
-      <div><a href="#s2"></a><a href="#s4"></a></div>
-      <div><a href="#s3"></a><a href="#s1"></a></div>
-    </div> -->
-
-    <div class="bullets">
-        <a href="#s1"></a>
-        <a href="#s2"></a>
-        <a href="#s3"></a>
-        <a href="#s4"></a>
-    </div>
-
+    <!-- End .wrapper -->
 </div>
+<!-- End .container -->
 <footer>
 
     <ul class="listFooter">
