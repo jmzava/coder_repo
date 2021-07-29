@@ -25,9 +25,9 @@
 /* cards staff */ 
 
 .cardStaff {
-    width: 350px;
-    height: 250px;
-    margin: 0px auto;
+    width: 250px;
+    height: 200px;
+    margin: 0px;
     cursor: pointer;
     perspective: 1000;
     -webkit-perspective: 1000;
@@ -39,7 +39,7 @@
     }
 
     &__imagen {
-        max-width: 100%;
+        min-width: 60vw;
     }
 
     &__frente,
@@ -47,8 +47,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 350px;
-        height: 250px;
+        width: 250px;
+        height: 200px;
         -webkit-perspective: 1000;
         perspective: 1000;
         -webkit-backface-visibility: hidden;
