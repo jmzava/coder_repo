@@ -168,7 +168,10 @@ body {
     top: 50%;
     transform: translateY(-50%); }
   .cardsStaff:hover .cardsStaff__image {
-    transform: translateY(-10px); }
+    transform: translateY(-10px);
+    width: 300px;
+    aspect-ratio: auto 300/510;
+    height: 510px; }
   .cardsStaff:hover .cardsStaff__thumb::after {
     top: 0; }
   .cardsStaff:hover .cardsStaff__snippet {
