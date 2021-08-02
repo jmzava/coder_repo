@@ -193,7 +193,10 @@ body {
         .cardsStaff__thumb::after {
           top: calc(100% - 140px); } }
   .cardsStaff__image {
-    transition: .5s ease-in-out; }
+    transition: .5s ease-in-out;
+    width: 300px;
+    aspect-ratio: auto 300/510;
+    height: 510px; }
   .cardsStaff__caption {
     position: absolute;
     top: 50%;
