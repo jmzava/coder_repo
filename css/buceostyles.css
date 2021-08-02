@@ -70,6 +70,9 @@ body {
 
 .image {
   border-radius: 90%;
+  padding-bottom: 10px;
+  border: 2px;
+  border-color: black;
   position: relative;
   opacity: 1;
   display: unset;
@@ -79,8 +82,7 @@ body {
   backface-visibility: hidden; }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,6 +93,20 @@ body {
   color: white;
   font-size: 32px;
   padding: 32px 32px; }
+
+@media screen and (min-width: 1024px) {
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .text {
+    color: white;
+    font-size: 32px;
+    padding: 32px 32px; } }
 
 /* galeria */
 .galCards {
@@ -136,62 +152,87 @@ body {
 .list-group-item1 {
   color: white; }
 
-/* cards staff */
-.cardStaff {
-  width: 250px;
-  height: 200px;
-  margin: 0px;
-  cursor: pointer;
-  perspective: 1000;
-  -webkit-perspective: 1000; }
-  .cardStaff__giro {
+.containerCardsStaff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 80px; }
+
+.cardsStaff {
+  width: 300px;
+  margin: 10px;
+  background-color: rgba(124, 123, 123, 0.4);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); }
+  .cardsStaff:hover .cardsStaff__caption {
+    top: 50%;
+    transform: translateY(-50%); }
+  .cardsStaff:hover .cardsStaff__image {
+    transform: translateY(-10px); }
+  .cardsStaff:hover .cardsStaff__thumb::after {
+    top: 0; }
+  .cardsStaff:hover .cardsStaff__snippet {
+    margin: 20px 0; }
+  .cardsStaff__thumb {
     position: relative;
-    transition: 0.8s ease-in-out;
-    transform-style: preserve-3d; }
-  .cardStaff__imagen {
-    min-width: 60vw; }
-  .cardStaff__frente, .cardStaff__atras {
+    max-height: 400px;
+    overflow: hidden; }
+    @media (min-width: 1024px) {
+      .cardsStaff__thumb {
+        max-height: 500px; } }
+    .cardsStaff__thumb::after {
+      position: absolute;
+      top: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 40%, rgba(255, 255, 255, 0) 100%);
+      transition: .3s; }
+      @media (min-width: 1024px) {
+        .cardsStaff__thumb::after {
+          top: calc(100% - 140px); } }
+  .cardsStaff__image {
+    transition: .5s ease-in-out; }
+  .cardsStaff__caption {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 200px;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  .cardStaff__atras {
-    transform: rotateY(180deg);
-    background: #0e7ba7;
-    color: white; }
-  .cardStaff__titulo {
-    position: relative;
-    height: 50px;
-    margin: auto;
+    top: 50%;
+    z-index: 1;
+    padding: 0 20px;
+    color: white;
+    transform: translateY(-50%);
     text-align: center;
-    font-size: 36px; }
-  .cardStaff:hover .cardStaff__giro {
-    transform: rotateY(180deg); }
-  .cardStaff__subtitulo {
-    font-size: 22px;
-    text-align: center; }
-  .cardStaff__texto {
-    margin-bottom: 0;
-    font-size: 18px;
-    text-align: center; }
-
-/* color de tarjetas variables con ciclo each */
-.cardColor--insPadi {
-  background-color: #07e212; }
-
-.cardColor--insSnsi {
-  background-color: #d46102; }
-
-.cardColor--divPadi {
-  background-color: #07b83c; }
-
-.cardColor--divSnsi {
-  background-color: #e69500; }
+    transition: .3s; }
+    @media (min-width: 1024px) {
+      .cardsStaff__caption {
+        top: calc(100% - 110px);
+        transform: unset; } }
+  .cardsStaff__title {
+    display: -webkit-box;
+    max-height: 85px;
+    overflow: hidden;
+    font-family: "Roboto Mono", monospace;
+    font-size: 23px;
+    line-height: 28px;
+    text-shadow: 0px 1px 5px black;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
+  .cardsStaff__snippet {
+    display: -webkit-box;
+    max-height: 150px;
+    margin: 20px 0;
+    overflow: hidden;
+    font-family: "Roboto Mono", monospace;
+    font-size: 16px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    transition: .5s ease-in-out;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical; }
+    @media (min-width: 1024px) {
+      .cardsStaff__snippet {
+        margin: 60px 0; } }
 
 /* slider  ver de sacarlo */
 .CSSgal {
