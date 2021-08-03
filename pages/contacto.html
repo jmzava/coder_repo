@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navBarColor navbar-dark navbar-expand-lg" role="navigation">
+        <nav class="navbar navBarColor navbar-dark navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -66,7 +66,8 @@
             </div>
             <div class="contactForm">
                 <h3>Contactanos</h3>
-                <form name="formuContacto" action="" id="formuContacto"  method="POST"  enctype="text/plain">
+                <form name="formuContacto" id="formuContacto">
+                    <!-- action="" method="POST"  enctype="text/plain"> -->
                     <p>
                         <input class="formIngreso" placeholder="NOMBRE" value="">
                     </p>
@@ -106,13 +107,11 @@
                     <fieldset class="fieldBordes">
                         <label class="formLabelTitulo">Desea ser contactado por mail</label>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="si1"
-                                value="option1">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="si" value="option1">
                             <label class="formLabel" for="si">Si</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no"
-                                value="option2">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="no" value="option2">
                             <label class="formLabel" for="no">No</label>
                         </div>
                     </fieldset>
