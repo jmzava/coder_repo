@@ -329,6 +329,9 @@ body {
     bottom: 5%; } }
 
 /* Carousel */
+.carouselrHome {
+  font-family: "Roboto Mono", monospace; }
+
 .carouselImg {
   height: 520px;
   object-fit: cover; }
